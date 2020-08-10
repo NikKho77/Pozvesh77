@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron onash1">
+    <h1> О НАС </h1>
+</div>
+
+{% for q in object_list %}
+<div class="jumbotron">
+<p>{{q.onas}}</p>
+</div>
+{% endfor %}
+
+{% endblock %}

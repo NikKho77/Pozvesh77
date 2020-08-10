@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron" height="200px" overflow="hidden" class="pipec">
+<div id="links" height="200px">
+
+    <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px;" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+      <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px" class="lp">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px;" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+      <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px" class="lp">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px;" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+      <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px" class="lp">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px;" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+      <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px" class="lp">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px;" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+      <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px" class="lp">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px;" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+      <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px" class="lp">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px;" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+      <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px" class="lp">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px;" class="lp1">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+      <a href="../static/image/IMG_0423.jpg" title="Banana" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0423.jpg" alt="" width="335px" class="lp">
+    </a>
+    <a href="../static/image/IMG_0672.jpg" title="Apple" data-gallery>
+        <img src="../static/image/thumbnails/IMG_0672.jpg" alt="Apple" width="335px" class="lp1">
+    </a>
+    <a href="../static/image/_MG_3292.jpg" title="Orange" data-gallery >
+        <img src="../static/image/thumbnails/_MG_3292.jpg" alt="Orange" width="335px" class="lp1">
+    </a>
+</div>
+</div>
+
+{% for h in object_list %}
+
+{% endfor %}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+{% endblock %}
